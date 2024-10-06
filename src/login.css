@@ -21,7 +21,7 @@ html {
   padding: 20px;
 }
 
-.profile-title {
+.profile-titles {
   font-size: 42px;
   color: #2d4b42;
   font-weight: bold;
@@ -87,18 +87,20 @@ form {
   display: flex;
   justify-content: center;
   margin-bottom: 15px;
+  margin-left: 5%; /* Konsistensi margin kiri */
 }
 
-.input-containers input {
-  width: 50%;
-  padding: 12px;
-  padding-right: 50px; /* Increased right padding */
+.input-containers input,
+.role-selection {
+  width: 50%; /* Lebar disesuaikan */
+  padding: 12px; /* Konsistensi padding */
   border: none;
   border-radius: 5px;
   box-sizing: border-box;
 }
 
-.input-containers input:focus {
+.input-containers input:focus,
+.role-selection:focus {
   outline: 2px solid #a0d8b3;
 }
 
@@ -149,4 +151,14 @@ button[type="submit"]:hover {
 
 .remembers-me input {
   margin-right: 5px;
+}
+
+p.errorLogin {
+  color: red;
+  font-size: 12px !important;
+  align-self: start;
+  justify-self: start;
+  margin-bottom: 15px;
+  padding-left: 230px;
+  margin-top: 0px;
 }
